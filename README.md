@@ -3,34 +3,32 @@
 
 ##### Compact
 ```
-.tar.bz2
+* .tar.bz2
 
 $ tar -cvjf file_name.tar.bz2 directory
 ```
 
 ##### Unpack
 ```
-.tar.bz2
-
+* .tar.bz2
 $ tar -xvjf file_name.tar.bz2
 
-.zip
-
+* .zip
 $ gunzip file_name.zip
 
-.rar
+* .rar
 
 $ unrar x file_name.rar
 
-.tar
+* .tar
 
 $ tar -xvf file_name.tar
 
-.tar.gz
+* .tar.gz
 
 $ tar -vzxf file_name.tar.gz
 
-.bz2
+* .bz2
 
 $ bunzip file_name.bz2
 ```
