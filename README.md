@@ -2,14 +2,14 @@
 ### Linux tips and tricks for command line and tasks automatization. Basic and advanced Linux commands
 
 ##### Compact
-```
-* .tar.bz2
+```c
+ .tar.bz2
 
 $ tar -cvjf file_name.tar.bz2 directory
 ```
 
 ##### Unpack
-```
+```c
 * .tar.bz2
 $ tar -xvjf file_name.tar.bz2
 
