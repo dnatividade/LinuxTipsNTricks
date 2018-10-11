@@ -1,4 +1,4 @@
-# LinuxTipsNTricks! [](https://img.shields.io/readthedocs/pip.svg)
+# LinuxTipsNTricks! ![status](https://img.shields.io/readthedocs/pip.svg)
 ### Linux tips and tricks for command line and tasks automatization. Basic and advanced Linux commands
 
 ##### Compact
