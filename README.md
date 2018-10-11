@@ -1,6 +1,5 @@
 # LinuxTipsNTricks
-### Linux tips and tricks for command line and tasks automatization.
-### Basic and advanced Linux commands
+### Linux tips and tricks for command line and tasks automatization. Basic and advanced Linux commands
 
 ##### Compact
 ```
@@ -36,7 +35,7 @@ $ tar -vzxf file_name.tar.gz
 $ bunzip file_name.bz2
 ```
 
-##### Create patch (diff):
+##### Create patch (diff)
 ```
 $ diff -u old_file updated_file > file.patch
 ```
@@ -46,12 +45,17 @@ $ diff -u old_file updated_file > file.patch
 $ patch  old_fle -i file.patch -o new_file
 ```
 
-##### Find specific word into the files:
+##### Find specific word into the files
 ```
 $ find ./* -type f -exec grep -l test {} \;
 ```
 
-##### Aplly patch Linux Kernel:
+##### Aplly patch Linux Kernel
 ```
 $ patch -p1 < file_name.patch
+```
+
+##### Remount partition read/write
+```
+# mount / -o remount,rw
 ```
