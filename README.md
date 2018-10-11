@@ -16,19 +16,19 @@
 
 `$ tar -xvjf nomedoarquivo.tar.bz2`
 
-.zip
+.zip 
 `$ gunzip nomedoarquivo.zip`
 
-.rar:
+.rar 
 `$ unrar x nomedoarquivo.rar`
 
-.tar:
+.tar 
 `$ tar -xvf nomedoarquivo.tar`
 
-.tar.gz:
+.tar.gz 
 `$ tar -vzxf nomedoarquivo.tar.gz`
 
-.bz2
+.bz2 
 `$ bunzip nomedoarquivo.bz2`
 
 Create patch (diff):
