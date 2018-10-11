@@ -1,42 +1,42 @@
 # LinuxTipsNTricks
 ##### Linux tips and tricks for command line and tasks automatization
 
-### ====================================================
-### BASIC AND ADVANCED LINUX COMMANDS
-### ====================================================
+#### ====================================================
+#### BASIC AND ADVANCED LINUX COMMANDS
+#### ====================================================
 
 ##### Compact
 ```
 .tar.bz2
 
-$ tar -cvjf nomedoarquivo.tar.bz2 pasta
+$ tar -cvjf file_name.tar.bz2 directory
 ```
 
 ##### Unpack
 ```
 .tar.bz2
 
-$ tar -xvjf nomedoarquivo.tar.bz2
+$ tar -xvjf file_name.tar.bz2
 
 .zip
 
-$ gunzip nomedoarquivo.zip
+$ gunzip file_name.zip
 
 .rar
 
-$ unrar x nomedoarquivo.rar
+$ unrar x file_name.rar
 
 .tar
 
-$ tar -xvf nomedoarquivo.tar
+$ tar -xvf file_name.tar
 
 .tar.gz
 
-$ tar -vzxf nomedoarquivo.tar.gz
+$ tar -vzxf file_name.tar.gz
 
 .bz2
 
-$ bunzip nomedoarquivo.bz2
+$ bunzip file_name.bz2
 ```
 
 ##### Create patch (diff):
@@ -56,5 +56,5 @@ $ find ./* -type f -exec grep -l test {} \;
 
 ##### Aplly patch Linux Kernel:
 ```
-$ patch -p1 < ARQUIVO.patch
+$ patch -p1 < file_name.patch
 ```
