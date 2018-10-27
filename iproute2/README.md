@@ -3,13 +3,13 @@
 
 | net-tools | iproute2 | Description |
 | --- | --- | --- |
-| *$ ifconfig -h* | `$ ip` | |
-| *$ ifconfig -a* | `$ ip -s addr` | |
-| *$ ifconfig eth0* | `$ ip addr show dev eth0` | |
-| *# ifconfig eth0 down* | `# ip link set dev eth0 down` | |
-| *# ifconfig eth0 up* | `# ip link set dev eth0 up` | |
-| *$ arp -n* | `$ ip neigh` |
-| *# ifconfig eth0 hw ether 00:11:22:AA:BB:CC* | `# ip link set dev eth0 address 00:11:22:AA:BB:CC` | |
+| *$ ifconfig -h* | `$ ip` | show help |
+| *$ ifconfig -a* | `$ ip -s addr` | show all information about all interfaces |
+| *$ ifconfig eth0* | `$ ip addr show dev eth0` | show information about eth0 only |
+| *# ifconfig eth0 down* | `# ip link set dev eth0 down` | disable interface |
+| *# ifconfig eth0 up* | `# ip link set dev eth0 up` | enable interface |
+| *$ arp -n* | `$ ip neigh` | show ARP cache |
+| *# ifconfig eth0 hw ether 00:11:22:AA:BB:CC* | `# ip link set dev eth0 address 00:11:22:AA:BB:CC` | change MAC address |
 | *# ifconfig eth0 down* <br> *# nameif eth1 00:11:22:AA:BB:CC* <br> *# ifconfig eth1 up* | `# ip link set dev eth0 down` <br> `# ip link set dev eth0 name eth1` <br> `# ip link set dev eth1 up` | rename interface eth0 to eth1 (MAC: 00:11:22:AA:BB:CC) |
 | *# ifconfig eth0:0 192.168.0.254 netmask 255.255.255.0* | `# ip addr add 192.168.0.254/24 dev eth0 label eth0:0` | create an alias / add IP address with label |
 | *# ifconfig eth0:0 down* | `# ip addr del 192.168.0.254/24 dev eth0` | delete an alias / IP address with label |
