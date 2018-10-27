@@ -1,7 +1,7 @@
 # LinuxTipsNTricks! ![status](https://img.shields.io/readthedocs/pip.svg)
 ### Using iproute2 instead net-tools
 
-| net-tools | iproute2 | | Description |
+| net-tools | iproute2 | Description |
 | --- | --- | --- |
 | *ifconfig -h* | `ip` | |
 | *ifconfig -a* | `ip -s addr` | |
