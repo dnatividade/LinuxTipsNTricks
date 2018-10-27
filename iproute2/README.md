@@ -10,9 +10,7 @@
 | *ifconfig eth0 up* | `ip link set dev eth0 up` |
 | *arp -n* | `ip neigh` |
 | *ifconfig eth0 hw ether 00:11:22:AA:BB:CC* | `ip link set dev eth0 address 00:11:22:AA:BB:CC` |
-| *ifconfig eth0 down*  
-nameif eth1 00:00:00:00:00:01  
-ifconfig eth1 up | `ip` |
+| *ifconfig eth0 down* <br> *nameif eth1 00:00:00:00:00:01* <br> ifconfig eth1 up | `ip` |
 | *if* | `ip` |
 | *if* | `ip` |
 | *if* | `ip` |
@@ -29,8 +27,6 @@ ifconfig eth1 up | `ip` |
 | *if* | `ip` |
 | *if* | `ip` |
 | *if* | `ip` |
-| Quebras de linha 	| Double space + enter 	|  	|
-| Listas não ordenadas 	| \* Item1     \*Item 2 	| <ul><li>item1</li><li>item2</li><li>item3</li><li>item4</li></ul> 	|
 
 
 **SOURCE**: https://www.oueta.com/linux/network-configuration-in-linux-ifconfig-net-tools-vs-ip-iproute2/
