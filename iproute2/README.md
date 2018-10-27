@@ -20,10 +20,10 @@
 | *# route del default gw 192.168.0.1* | `# ip route del default via 192.168.0.1` | delete default gateway |
 | *# route add -net 192.168.150.0 netmask 255.255.255.0 gw 192.168.0.1 dev eth1* | `# ip route add 192.168.150.0/24 via 192.168.0.1 dev eth1` | add static route |
 | *# route del -net 192.168.150.0 netmask 255.255.255.0* | `# ip route del 192.168.150.0/24` | del static route |
-| *# (Debian-like: apt install vlan)* <br> *vconfig add eth0 10* | `# ip link del dev eth0.10` | create VLAN interface |
+| *(Debian-like: apt install vlan)* <br> *# vconfig add eth0 10* | `# ip link del dev eth0.10` | create VLAN interface |
 | *# ifconfig eth0 mtu 1500* | `# ip link set dev eth0 mtu 1500` | chage MTU |
-| *# ip link set dev eth0 mtu 1500* <br> *# ifconfig eth0 -arp* | `# ip link set dev eth0 arp on` <br> `# ip link set dev eth0 arp off` | enable / disable ARP |
-| *# ifconfig eth0 promisc* <br> ` ifconfig eth0 -promisc` | `# ip link set dev eth0 promisc on` <br> ` ip link set dev eth0 promisc off` | enable / disable promiscuous mode |
+| *# ifconfig eth0 arp* <br> *# ifconfig eth0 -arp * | `# ip link set dev eth0 arp on` <br> `# ip link set dev eth0 arp off` | enable / disable ARP |
+| *# ifconfig eth0 promisc* <br> *# ifconfig eth0 -promisc* | `# ip link set dev eth0 promisc on` <br> ` ip link set dev eth0 promisc off` | enable / disable promiscuous mode |
 | *# ifconfig eth0 multicast* <br> *# ifconfig eth0 -multicast* | `# ip link set dev eth0 multicast on` <br> `# ip link set dev eth0 multicast off` | enable / disable multicast |
 | *# ifconfig eth0 allmulti* <br> *# ifconfig eth0 -allmulti* | `# ip link set dev eth0 allmulticast on` <br> `# ip link set dev eth0 allmulticast off` | enable / disable all-multicast mode |
 
