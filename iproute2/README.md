@@ -5,8 +5,9 @@
 | --- | --- |
 | ifconfig -h | `ip` |
 | ifconfig -a | `ip -s addr` |
-| if | `ip` |
-| if | `ip` |
+| ifconfig eth0 | ` ip addr show dev eth0 ` |
+|  ifconfig eth0 down | ` ip link set dev eth0 down` |
+ ifconfig eth0 up | ` ip link set dev eth0 up `
 | if | `ip` |
 | if | `ip` |
 | if | `ip` |
