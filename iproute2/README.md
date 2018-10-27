@@ -27,5 +27,8 @@
 | *if* | `ip` |
 | *if* | `ip` |
 | *if* | `ip` |
+| Quebras de linha 	| Double space + enter 	|  	|
+| Listas não ordenadas 	| \* Item1     \*Item 2 	| <ul><li>item1</li><li>item2</li><li>item3</li><li>item4</li></ul> 	|
 
-*SOURCE*: https://www.oueta.com/linux/network-configuration-in-linux-ifconfig-net-tools-vs-ip-iproute2/
+
+**SOURCE**: https://www.oueta.com/linux/network-configuration-in-linux-ifconfig-net-tools-vs-ip-iproute2/
