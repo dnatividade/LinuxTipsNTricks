@@ -6,7 +6,7 @@
 | *ifconfig -h* | `ip` |
 | *ifconfig -a* | `ip -s addr` |
 | *ifconfig eth0* | ` ip addr show dev eth0 ` |
-| *ifconfig eth0 down* && *ifconfig eth0 up* | ` ip link set dev eth0 down && ip link set dev eth0 u` |
+| *ifconfig eth0 down* **&&** *ifconfig eth0 up* | ` ip link set dev eth0 down **&&** ip link set dev eth0 u` |
 | if | `ip` |
 | if | `ip` |
 | if | `ip` |
