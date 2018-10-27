@@ -10,7 +10,7 @@
 | *ifconfig eth0 up* | `ip link set dev eth0 up` |
 | *arp -n* | `ip neigh` |
 | *ifconfig eth0 hw ether 00:11:22:AA:BB:CC* | `ip link set dev eth0 address 00:11:22:AA:BB:CC` |
-| *if* | `ip` |
+| *ifconfig eth0 down* \*  nameif eth1 00:00:00:00:00:01 \*  ifconfig eth1 up | `ip` |
 | *if* | `ip` |
 | *if* | `ip` |
 | *if* | `ip` |
