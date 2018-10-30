@@ -3,14 +3,14 @@
 
 | Command line | Description |
 | --- | --- |
-| `iptables -L` <br> `iptables -t filter -L` | shows rules of filter tables |
-| `iptables -t nat -L` | shows rules of nat tables |
-| `iptables -t mangle -L` | shows rules of mangle tables |
-| `iptables -t raw -L` | shows rules of raw tables |
-| `iptables -t security -L` | shows rules of security tables |
-| `iptables -F` <br> `iptables -t filter -F` | deletes rules of filter tables |
+| `iptables -L` <br> `iptables -t filter -L` | shows rules of filter table |
+| `iptables -t nat -L` | shows rules of nat table |
+| `iptables -t mangle -L` | shows rules of mangle table |
+| `iptables -t raw -L` | shows rules of raw table |
+| `iptables -t security -L` | shows rules of security table |
+| `iptables -F` <br> `iptables -t filter -F` | deletes rules of filter table |
 | `iptables -X` | deletes custom chains |
-| `iptables -t nat -Z` <br> `iptables -t mangle -Z` <br> `iptables -t filter -Z` | clears chain counters |
+| `iptables -t nat -Z` <br> `iptables -t mangle -Z` <br> `iptables -t filter -Z` | clears chain counters (nat, mangle and filter) |
 | `iptables -P INPUT DROP` <br> `iptables -P OUTPUT DROP` <br> `iptables -P FORWARD DROP` | **default policies**: DROP |
 | `iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 81 -j DNAT --to 10.0.0.17:8081` | **port forwarding**: from eth0 interface; tcp protocol; from port 81 to IP:port 10.0.0.17:8081 |
 | `iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE` | **NAT** - IP masquerade; output interface: eth0 |
