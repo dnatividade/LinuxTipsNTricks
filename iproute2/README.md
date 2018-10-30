@@ -2,7 +2,7 @@
 ### Using iproute2 instead net-tools
 
 | net-tools | iproute2 | Description |
-| --| --- | -- |
+| ---| --- | --- |
 | *$ ifconfig -h* | `$ ip` | show help |
 | *$ ifconfig -a* | `$ ip -s addr` | show all information about all interfaces |
 | *$ ifconfig eth0* | `$ ip addr show dev eth0` | show information about eth0 only |
