@@ -12,7 +12,7 @@
 | `# nmap -sV -p 25,80,443 10.10.0.19` | scaning **ports 25,80,443** |
 | `# nmap -p 1-65535 10.10.0.0/16` | scaning **all ports** of a **network** |
 | `# nmap -p 100-5000 10.10.0.19` | scaning ports **from 100 to 5000** |
-| `# nmap -F 10.10.0.0/16` | **fast nmap scaning for a network** (information about some ports and MAC|
+| `# nmap -F 10.10.0.0/16` | **fast nmap scaning for a network** (information about some ports and MAC) |
 
 
 **SOURCE:**
