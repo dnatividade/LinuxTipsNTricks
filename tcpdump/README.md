@@ -26,12 +26,12 @@
 | `# tcpdump -i eth0 src net 10.10.0.0/16 and dst net 10.20.30.0/24 or 10.30.0.0/16` | advanced combinations using the logical operators **AND, OR**: __from one net to another__ |
 | `# tcpdump -i eth0 dst 10.10.10.16 and src net 10.20.0.0/16 and not icmp` | advanced combinations using the logical operators **AND, OR, NOT**: __to one IP, from one net, excluding icmp traffic__  |
 | `# tcpdump -i eth0 src host1 and not dst port 3050` | monitors traffic **from host1** excluding port 3050 traffic |
-| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-syn'` | monitors **TCP SYN** flags |
-| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-ack'` | monitors **TCP ACK** flags |
-| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-psh'` | monitors **TCP PSH** flags |
-| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-rst'` | monitors **TCP RST** flags |
-| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-urg'` | monitors **TCP URG** flags |
-| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-fin'` | monitors **TCP FIN** flags |
+| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-syn'` | monitors TCP **SYN** flags |
+| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-ack'` | monitors TCP **ACK** flags |
+| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-psh'` | monitors TCP **PSH** flags |
+| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-rst'` | monitors TCP **RST** flags |
+| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-urg'` | monitors TCP **URG** flags |
+| `# tcpdump -i eth0 'tcp[tcpflags] == tcp-fin'` | monitors TCP **FIN** flags |
 | `# tcpdump -i eth0 'tcp[tcpflags] == 18'` | monitors TCP **SYN-ACK** flags |
 | `# tcpdump -i eth0 'tcp[tcpflags] == 6'` | monitors TCP **SYN-RST** flags |
 
