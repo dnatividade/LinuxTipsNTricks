@@ -22,7 +22,7 @@
 | `# tcpdump -i any portrange 1024-3000 ` | monitors traffic from/to **ports between 1024 and 3000** |
 | `# tcpdump -i any less 48` | monitors traffic with packets **less than 48** bytes |
 | `# tcpdump -i any greater 256` | monitors traffic with packets **greater than 256** bytes |
-|  |  |
+| --- | --- |
 | `tcpdump -i eth0 src 10.10.10.14 and dst port 9999` | advanced combinations using the logical operator AND |
 | `tcpdump -i eth0 src net 10.10.0.0/16 and dst net 10.20.30.0/24 or 10.30.0.0/16` | advanced combinations using the logical operator AND: **from onde net to another** |
 | `# tcpdump` | monitors |
@@ -30,4 +30,5 @@
 | `# tcpdump` | monitors |
 
 **SOURCE:** https://danielmiessler.com/study/tcpdump/
+
 **LICENCE:** CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/)
