@@ -7,6 +7,12 @@
 $ tar -cvjf file_name.tar.bz2 directory
 ```
 
+##### Compact ZIP with PASSWORD
+```
+$ zip -e -r file_dst.zip file_or_directory_src
+<enter password>
+```
+
 ##### Unpack
 ```
  .tar.bz2
