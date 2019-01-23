@@ -34,6 +34,16 @@ $ tar -vzxf file_name.tar.gz
 $ bunzip file_name.bz2
 ```
 
+##### Find specific word into the files
+```
+$ find ./* -type f -exec grep -l test {} \;
+```
+
+##### Replace all line breaks with a blank space
+```
+$ tr '\n' ' ' < entrada.txt > saida.txt
+```
+
 ##### Create patch (diff)
 ```
 $ diff -u old_file updated_file > file.patch
@@ -42,11 +52,6 @@ $ diff -u old_file updated_file > file.patch
 ##### Aplly patch
 ```
 $ patch  old_fle -i file.patch -o new_file
-```
-
-##### Find specific word into the files
-```
-$ find ./* -type f -exec grep -l test {} \;
 ```
 
 ##### Aplly patch Linux Kernel
