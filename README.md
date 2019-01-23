@@ -41,7 +41,7 @@ $ find ./* -type f -exec grep -l test {} \;
 
 ##### Replace all line breaks with a blank space
 ```
-$ tr '\n' ' ' < entrada.txt > saida.txt
+$ tr '\n' ' ' < old_file.txt > new_file.txt
 ```
 
 ##### Create patch (diff)
