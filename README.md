@@ -71,6 +71,6 @@ $ sudo apt-get install ripperx
 ```
 ```
 #Convert WAV to MP3: lame
-sudo apt-get install lame
-lame -h musica.wav musica.mp3
+$ sudo apt-get install lame
+$ lame -h musica.wav musica.mp3
 ```
