@@ -69,3 +69,8 @@ $ patch -p1 < file_name.patch
 Rip music CD - Ripperx
 $ sudo apt-get install ripperx
 ```
+```
+Convert wav to mp3 - lame
+sudo apt-get install lame
+lame -h musica.wav musica.mp3
+```
