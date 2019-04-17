@@ -63,3 +63,9 @@ $ patch -p1 < file_name.patch
 ```
 # mount / -o remount,rw
 ```
+
+##### Music conversions
+```
+Rip music CD - Ripperx
+$ sudo apt-get install ripperx
+```
