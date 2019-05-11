@@ -7,11 +7,13 @@
 # Author: dnatividade
 ##############################################################
 
+#Install MAKE and GCC
+apt-get install make gcc -y
 
+#Download, extract, compile and install No-IP...
 cd /usr/local/src
 wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz --no-check-certificate
-tar xzf noip-duc-linux.tar.gz
-cd no-ip-2.1.9
+tar xzf noip-duc-linux.tar.gz && cd noip-2.1.9-1
 make
 make install
 
@@ -33,6 +35,6 @@ echo "exit 0" >> /etc/init.d/noip.sh
 
 #Change permissions and puts script at startup
 chmod 755 /etc/init.d/noip.sh
-update-rc noip.sh defaults
+update-rc.d noip.sh defaults
 
 exit 0
