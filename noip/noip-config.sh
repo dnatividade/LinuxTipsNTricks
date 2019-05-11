@@ -35,4 +35,4 @@ echo "exit 0" >> /etc/init.d/noip.sh
 chmod 755 /etc/init.d/noip.sh
 update-rc noip.sh defaults
 
-exit0
+exit 0
