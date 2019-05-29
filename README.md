@@ -74,3 +74,9 @@ $ sudo apt-get install ripperx
 $ sudo apt-get install lame
 $ lame -h musica.wav musica.mp3
 ```
+
+##### Create GIF from WEBM file
+```
+$ ffmpeg -i video.webm -pix_fmt rgb24 video.gif
+```
+
