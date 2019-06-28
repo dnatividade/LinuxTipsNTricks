@@ -4,15 +4,15 @@
 read numero
 if [ $numero -gt 0 ];
 then
-    echo "Número positivo"
+    echo "Positive number"
 elif [ $numero -lt 0 ]
 then
-    echo "Número negativo"
+    echo "Negative number"
 elif [ $numero -eq 0 ]
 then
-    echo "Número é zero"
+    echo "Zero"
 else
-    echo "O valor fornecido não é um número!"
+    echo "Is not a number"
 fi
 ````
 ##### SOURCE: http://blog.evaldojunior.com.br/aulas/blog/shell%20script/2011/05/08/shell-script-parte-2-controle-de-fluxo.html
