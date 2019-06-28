@@ -49,12 +49,12 @@ $ tr '\n' ' ' < old_file.txt > new_file.txt
 $ diff -u old_file updated_file > file.patch
 ```
 
-##### Aplly patch
+##### Apply patch
 ```
 $ patch  old_fle -i file.patch -o new_file
 ```
 
-##### Aplly patch Linux Kernel
+##### Apply patch Linux Kernel
 ```
 $ patch -p1 < file_name.patch
 ```
