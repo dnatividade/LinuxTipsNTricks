@@ -44,6 +44,11 @@ $ find ./* -type f -exec grep -l test {} \;
 $ tr '\n' ' ' < old_file.txt > new_file.txt
 ```
 
+##### Show only uncomment lines
+```
+$ cat file_name | grep -Ev '[:blank]*#|^[:blank]*$'
+```
+
 ##### Create patch (diff)
 ```
 $ diff -u old_file updated_file > file.patch
