@@ -8,3 +8,5 @@ GRUB_GFXPAYLOAD_LINUX=1024x768
 # update-grub
 # reboot
 ```
+
+##### SOURCE: https://www.vivaolinux.com.br/dica/Alterar-resolucao-de-tela-do-terminal-modo-texto
