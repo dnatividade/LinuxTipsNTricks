@@ -1,4 +1,20 @@
-## SQL e Teoria Relacional - como escrever códigos SQL precisos
+## LIVRO: SQL e Teoria Relacional - como escrever códigos SQL precisos
 **Autor**: C. J. Date
+
 Novatec, Maio/2015
+
+#### Cap1: Propriedades das relações (pag 41)
+Grau: número de atributos da relação
+
+Cardinalidade: número de tuplas da relação
+
+Relações nunca contêm tuplas duplicadas (mas o SQL permite sim, devendo-se fazer uso do DISTINCT - Ex.:
+
+SELECT DISTINCT field FROM  table;
+
+Relações não diferenciam a ordem que aparecem suas tuplas e atributos (campos)
+
+Relações são sempre normalizadas (1FN)
+
+
 
