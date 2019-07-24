@@ -26,3 +26,5 @@ SELECT DISTINCT field FROM  table;
 - Valor = não ocupa lugar no tempo e espaço; não pode ser atualizado;
 - Variável = ocupa um lugar no tempo e espaço; **contém um valor**; pode ser atualizado;
 
+---
+
