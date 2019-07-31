@@ -1,4 +1,4 @@
-# LinuxTipsNTricks! ![status](https://img.shields.io/readthedocs/pip.svg)
+# LinuxTipsNTricks! /readthedocs/:packageName
 ### Linux tips and tricks for command line and tasks automatization. Basic and advanced Linux commands
 
 ##### Compact
@@ -83,5 +83,21 @@ $ lame -h musica.wav musica.mp3
 ##### Create GIF from WEBM file
 ```
 $ ffmpeg -i video.webm -pix_fmt rgb24 video.gif
+```
+
+##### FFMPEG
+```
+#Cut video (from 20 sec. to 27 sec.)
+ffmpeg -i input.mov -c:av copy -ss 00:00:20 -t 7 output.mov
+
+#Concatenate videos
+##create a list containing input video files (list.txt):
+file 'input1.mp4'
+file 'input2.mp4'
+file 'inputN.mp4'
+#----------------
+
+##concat files
+ffmpeg -f concat -i list.txt -c copy output.mp4
 ```
 
