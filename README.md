@@ -99,5 +99,8 @@ file 'inputN.mp4'
 
 ##concat files
 ffmpeg -f concat -i list.txt -c copy output.mp4
+
+#Remove audio from video file
+ffmpeg -i input.mov -c copy -an output.mov
 ```
 
