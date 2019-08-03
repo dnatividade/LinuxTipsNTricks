@@ -31,7 +31,7 @@ $ tar -xvf file_name.tar
 $ tar -vzxf file_name.tar.gz
 
 .tar.xz
-$ tar -Jxf file_name.tar.gz
+$ tar -Jxf file_name.tar.xz
 
  .bz2
 $ bunzip file_name.bz2
