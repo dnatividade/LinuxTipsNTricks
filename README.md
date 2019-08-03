@@ -30,8 +30,12 @@ $ tar -xvf file_name.tar
  .tar.gz
 $ tar -vzxf file_name.tar.gz
 
+.tar.xz
+$ tar -Jxf file_name.tar.gz
+
  .bz2
 $ bunzip file_name.bz2
+
 ```
 
 ##### Find specific word into the files
