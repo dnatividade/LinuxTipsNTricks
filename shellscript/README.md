@@ -46,3 +46,15 @@ done
 
 ##### SOURCE: https://cleitonbueno.com/shell-script-estrutura-de-repeticao-e-arrays/
 ----
+
+
+## FOR
+
+```
+MYUSER=`whoami`
+
+case $MYUSER in
+	root) install_wget() ;;
+	*) echo "You need to be root!" ;;
+esac
+```
