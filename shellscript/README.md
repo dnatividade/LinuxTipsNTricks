@@ -48,7 +48,7 @@ done
 ----
 
 
-## FOR
+## CASE
 
 ```
 MYUSER=`whoami`
