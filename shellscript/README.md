@@ -54,7 +54,7 @@ done
 MYUSER=`whoami`
 
 case $MYUSER in
-	root) install_wget() ;;
-	*) echo "You need to be root!" ;;
+	root) echo "You are root!" ;;
+	*) echo "You are not root!" ;;
 esac
 ```
