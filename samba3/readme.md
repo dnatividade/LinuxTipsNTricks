@@ -1,16 +1,16 @@
-## Comandos uteis Samba3
+## Samba3 util commands
 
-**Listar usuários**:
+**Lista users**:
 ```
 pdbedit -L -v
 ```
 
-**Criar usuários**:
+**Create users**:
 ```
 smbpasswd -a user_name
 ```
 
-**Excluir usuários**:
+**Delete users**:
 ```
 smbpasswd -x user_name
 ```
