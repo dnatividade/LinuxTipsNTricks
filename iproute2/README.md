@@ -28,4 +28,4 @@
 | *# ifconfig eth0 allmulti* <br> *# ifconfig eth0 -allmulti* | `# ip link set dev eth0 allmulticast on` <br> `# ip link set dev eth0 allmulticast off` | enable / disable all-multicast mode |
 
 
-**SOURCE**: https://www.oueta.com/linux/network-configuration-in-linux-ifconfig-net-tools-vs-ip-iproute2/
+(source: https://www.oueta.com/linux/network-configuration-in-linux-ifconfig-net-tools-vs-ip-iproute2/)
