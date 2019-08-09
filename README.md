@@ -84,6 +84,14 @@ $ sudo apt-get install lame
 $ lame -h musica.wav musica.mp3
 ```
 
+##### Remove ALL image EXIF
+```
+$ sudo apt install libimage-exiftool-perl
+$ exiftool -all= *.jpg
+```
+(soucer: https://www.shellhacks.com/remove-exif-data-images-photos-linux/)
+
+
 ##### Create GIF from WEBM file
 ```
 $ ffmpeg -i video.webm -pix_fmt rgb24 video.gif
