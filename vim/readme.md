@@ -12,3 +12,5 @@
 ##### Exit without save
 `:q!`
 
+##### Undo
+[ESC] u
