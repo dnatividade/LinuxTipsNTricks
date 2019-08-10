@@ -7,7 +7,7 @@
 $ tar -cvjf file_name.tar.bz2 directory
 
  .tar.xz
-$tar -Jcvf file_name.tar.xz directory/
+$ tar -Jcvf file_name.tar.xz directory/
 ```
 
 ##### Compact ZIP with PASSWORD
