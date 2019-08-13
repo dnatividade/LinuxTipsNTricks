@@ -14,3 +14,6 @@
 
 ##### Undo
 `[ESC] u`
+
+##### Delete line containing a specific word
+`:g/word/:delete`
