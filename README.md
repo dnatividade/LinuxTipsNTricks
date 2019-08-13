@@ -56,6 +56,11 @@ $ tr '\n' ' ' < old_file.txt > new_file.txt
 $ cat file_name | grep -Ev '[:blank]*#|^[:blank]*$'
 ```
 
+##### Delete lines from a file containing a specific word
+```
+$ cat old_file.txt |grep -v host > ip.txt
+```
+
 ##### Create patch (diff)
 ```
 $ diff -u old_file updated_file > file.patch
