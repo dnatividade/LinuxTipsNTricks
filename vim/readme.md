@@ -1,4 +1,4 @@
-# VIM TIPS
+# VI / VIM TIPS
 
 ##### Replace a word
 `:%s/word_old/word_new/g`
@@ -17,3 +17,9 @@
 
 ##### Delete line containing a specific word
 `:g/word/:delete`
+
+##### Go to a specific line
+`:LINE_NUMBER`
+
+##### Show line numbers
+`:set number`
