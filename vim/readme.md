@@ -1,4 +1,4 @@
-# VI / VIM TIPS
+#VI/ VIM TIPS
 
 ##### Replace a word
 `:%s/word_old/word_new/g`
