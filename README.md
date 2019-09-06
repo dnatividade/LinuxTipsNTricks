@@ -1,6 +1,8 @@
 # LinuxTipsNTricks! ![docs-tipsNtrics](https://img.shields.io/badge/docs-tipsNtricks-green)
 ### Linux tips and tricks for command line and tasks automatization. Basic and advanced Linux commands
 
+---
+
 ##### Compact
 ```
  .tar.bz2
@@ -41,6 +43,8 @@ $ bunzip file_name.bz2
 
 ```
 
+---
+
 ##### Find specific word into the files
 ```
 $ find ./* -type f -exec grep -l test {} \;
@@ -61,6 +65,8 @@ $ cat file_name | grep -Ev '[:blank]*#|^[:blank]*$'
 $ cat old_file.txt |grep -v host > ip.txt
 ```
 
+---
+
 ##### Create patch (diff)
 ```
 $ diff -u old_file updated_file > file.patch
@@ -76,10 +82,21 @@ $ patch  old_fle -i file.patch -o new_file
 $ patch -p1 < file_name.patch
 ```
 
+##### Disable kernel modules from initialization
+```
+- edit the (create if not exist): /etc/modprobe.d/blacklist.conf
+- insert one module for a line to disable it:
+	blacklist name_of_module
+```
+
+---
+
 ##### Remount partition read/write
 ```
 # mount / -o remount,rw
 ```
+
+---
 
 ##### Music conversions
 ```
