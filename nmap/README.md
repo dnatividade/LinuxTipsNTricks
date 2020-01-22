@@ -3,7 +3,7 @@
 
 | Command line | Description |
 | --- | --- |
-| `# nmap -O site.com` | **operational system detection** and scan from princiapl ports|
+| `# nmap -O site.com` | **operational system detection** and principal ports scan |
 | `# nmap -A site.com` | operational system detection and scan from princiapl ports with **service and version detection** |
 | `# nmap -sP 10.10.20.0/24` | scaning **IPs** of a **network** (**IP SCAN**) |
 | `# nmap 10.10.0.0/16 --exclude 10.10.10.10` | scaning IPs of a network **excluding one IP** |
