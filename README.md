@@ -101,6 +101,7 @@ $ patch -p1 < file_name.patch
 # sed -i.bak '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab && sudo swapoff -a && sudo rm -f -r /swapfile
 ```
 (source: https://www.vivaolinux.com.br/dica/Desativar-SWAP-em-Ubuntu-2004-e-derivados-com-unico-comando)
+
 ---
 
 ##### Music conversions
