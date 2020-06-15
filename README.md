@@ -96,6 +96,11 @@ $ patch -p1 < file_name.patch
 # mount / -o remount,rw
 ```
 
+##### Disable swap (Ubuntu 20.04)
+```
+# sed -i.bak '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab && sudo swapoff -a && sudo rm -f -r /swapfile
+```
+(source: https://www.vivaolinux.com.br/dica/Desativar-SWAP-em-Ubuntu-2004-e-derivados-com-unico-comando)
 ---
 
 ##### Music conversions
@@ -114,7 +119,7 @@ $ lame -h musica.wav musica.mp3
 $ sudo apt install libimage-exiftool-perl
 $ exiftool -all= *.jpg
 ```
-(soucer: https://www.shellhacks.com/remove-exif-data-images-photos-linux/)
+(souce: https://www.shellhacks.com/remove-exif-data-images-photos-linux/)
 
 
 ##### Create GIF from WEBM file
