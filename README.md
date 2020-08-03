@@ -47,7 +47,12 @@ $ bunzip file_name.bz2
 
 ##### Find specific word into the files
 ```
-$ find ./* -type f -exec grep -l test {} \;
+$ find ./* -type f -exec grep -l some_word {} \;
+```
+
+##### Find and delete specific files
+```
+$ find ./ -name file_name -exec rm {} \;
 ```
 
 ##### Replace all line breaks with a blank space
