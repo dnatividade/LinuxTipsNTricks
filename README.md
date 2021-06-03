@@ -158,4 +158,5 @@ ffmpeg -i input.mov -c copy -an output.mov
 #apt install imagemagick
 convert -resize x16 -gravity center -crop 16x16+0+0 input.png -flatten -colors 256 -background transparent output.ico
 ```
+(souce: https://askubuntu.com/questions/867567/convert-jpg-or-png-to-ico-using-terminal-and-back)
 
