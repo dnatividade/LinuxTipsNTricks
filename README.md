@@ -152,3 +152,10 @@ ffmpeg -f concat -i list.txt -c copy output.mp4
 ffmpeg -i input.mov -c copy -an output.mov
 ```
 
+
+##### Convert PNG to ICO
+```
+#apt install imagemagick
+convert -resize x16 -gravity center -crop 16x16+0+0 input.png -flatten -colors 256 -background transparent output.ico
+```
+
