@@ -1,3 +1,17 @@
+## Debian 11 and 12 audio: "Saída fictícia"
+
+```
+#1: Add your user into "audio" group:
+#sudo usermod -a -G audio username
+
+#2: Edit PulseAudio file:
+#sudo nano /etc/pulse/default.pa
+
+#Uncomment the lines:
+load-module module-alsa-sink
+load-module module-alsa-source device=hw:1,0 ← change the value to 0,0
+```
+
 ## Update from Debian8 (Jessie) to Debian9 (Stretch)
 
 ```
