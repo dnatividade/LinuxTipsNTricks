@@ -10,6 +10,8 @@
 #Uncomment the lines:
 load-module module-alsa-sink
 load-module module-alsa-source device=hw:1,0 ← change the value to 0,0
+
+#SOURCE: https://plus.diolinux.com.br/t/saida-ficticia-no-debian-11-e-12/38105
 ```
 
 ## Update from Debian8 (Jessie) to Debian9 (Stretch)
