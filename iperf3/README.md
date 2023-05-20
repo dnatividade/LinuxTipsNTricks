@@ -2,7 +2,7 @@
 
 ##### Listen on default port (5200 TCP)
 ```
-iperf -s
+iperf3 -s
 ```
 ---
 
@@ -10,6 +10,6 @@ iperf -s
 
 ##### Send 30 TCP packets to server and show result every 1 second
 ```
-iperf -c SERVER_IP -t 30 -i 1
+iperf3 -c SERVER_IP -t 30 -i 1
 ```
 ---
