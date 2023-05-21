@@ -169,6 +169,9 @@ qpdf --password=PASSWORD --decrypt File_with_pass.pdf File_without_pass.pdf
 
 ##### Separate PDF file pages
 ```
+
+---
+
 #apt install pdftk
 pdftk File.pdf burst
 ```
