@@ -174,6 +174,7 @@ qpdf --password=PASSWORD --decrypt File_with_pass.pdf File_without_pass.pdf
 
 #apt install pdftk
 pdftk File.pdf burst
+
 ```
 
 ##### Reduce PDF file quality (downsize)
