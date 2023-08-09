@@ -135,8 +135,11 @@ $ ffmpeg -i video.webm -pix_fmt rgb24 video.gif
 
 ##### FFMPEG
 ```
-#Cut video (from 20 sec. to 27 sec.)
-ffmpeg -i input.mov -c:av copy -ss 00:00:20 -t 7 output.mov
+#Cut video (extracts video from 20 sec. to 27 sec.)
+ffmpeg -i input.mp4 -ss 00:00:20 -t 00:00:27 -c copy output.mp4
+
+#Remove video (removes a slice from 20 sec. to 27 sec.)
+ffmpeg -i input.mp4 -vf  "select='not(between(t,20,27))',  setpts=N/FRAME_RATE/TB" -af "aselect='not(between(t,20,27))', asetpts=N/SR/TB" output.mp4
 
 #Concatenate videos
 ##create a list containing input video files (list.txt):
