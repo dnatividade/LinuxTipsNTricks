@@ -148,11 +148,14 @@ file 'input2.mp4'
 file 'inputN.mp4'
 #----------------
 
-##concat files
+##Concat files
 ffmpeg -f concat -i list.txt -c copy output.mp4
 
 #Remove audio from video file
 ffmpeg -i input.mov -c copy -an output.mov
+
+#Compress video
+ffmpeg -i input.mp4 -vcodec libx264 -crf 20 output.mp4
 ```
 
 
