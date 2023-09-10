@@ -128,9 +128,9 @@ $ exiftool -all= *.jpg
 (souce: https://www.shellhacks.com/remove-exif-data-images-photos-linux/)
 
 
-##### Create GIF from WEBM file
+##### Create GIF from videos file
 ```
-$ ffmpeg -i video.webm -pix_fmt rgb24 video.gif
+$ ffmpeg -i video.mp4 -pix_fmt rgb24 video.gif
 ```
 
 ##### FFMPEG
