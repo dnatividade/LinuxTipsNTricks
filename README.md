@@ -48,6 +48,9 @@ $ bunzip file_name.bz2
 ##### Find specific word into the files
 ```
 $ find ./* -type f -exec grep -l some_word {} \;
+
+OR (into .cc and .h files)
+$ grep --include=\*.{cc,h} -rnw './' -e "some words"
 ```
 
 ##### Find and delete specific files
