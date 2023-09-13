@@ -92,7 +92,7 @@ $ patch -p1 < file_name.patch
 
 ##### Disable kernel modules from initialization
 ```
-- edit the (create if not exist): /etc/modprobe.d/blacklist.conf
+- edit (create if not exist): /etc/modprobe.d/blacklist.conf
 - insert one module for a line to disable it:
 	blacklist name_of_module
 ```
@@ -120,7 +120,7 @@ $ sudo apt-get install ripperx
 ```
 #Convert WAV to MP3: lame
 $ sudo apt-get install lame
-$ lame -h musica.wav musica.mp3
+$ lame -h music.wav music.mp3
 ```
 
 ##### Remove ALL image EXIF
