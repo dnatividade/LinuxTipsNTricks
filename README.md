@@ -3,7 +3,7 @@
 
 ---
 
-##### Compact
+##### Compress/Uncompress
 ```
  .tar.bz2
 $ tar -cvjf file_name.tar.bz2 directory
@@ -12,7 +12,7 @@ $ tar -cvjf file_name.tar.bz2 directory
 $ tar -Jcvf file_name.tar.xz directory/
 ```
 
-##### Compact ZIP with PASSWORD
+##### Compress ZIP with PASSWORD
 ```
 $ zip -e -r file_dst.zip file_or_directory_src
 <enter password>
