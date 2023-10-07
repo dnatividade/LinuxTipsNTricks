@@ -191,3 +191,4 @@ pdftk File.pdf burst
 #apt install ghostscript
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=Reduced_file.pdf Original_file.pdf
 ```
+
