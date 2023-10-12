@@ -6,3 +6,4 @@ ALTER TABLE tablename AUTO_INCREMENT = 1
 
 #SOURCE: https://stackoverflow.com/questions/8923114/how-to-reset-auto-increment-in-mysql
 ```
+
