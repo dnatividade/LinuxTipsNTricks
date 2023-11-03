@@ -17,6 +17,7 @@
 
 
 **SOURCE:**
+```
 https://nmap.org/book/osdetect-usage.html
-
 https://askubuntu.com/questions/377787/how-to-scan-an-entire-network-using-nmap
+```
