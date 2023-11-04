@@ -10,3 +10,6 @@ Use `-o KexAlgorithms=+diffie-hellman-group1-sha1` param, as follows:
 $ ssh -o KexAlgorithms=+diffie-hellman-group1-sha1 user@1.2.3.4
 ```
 
+``` 
+@dnat
+```
