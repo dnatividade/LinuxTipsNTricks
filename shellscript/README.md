@@ -58,3 +58,7 @@ case $MYUSER in
 	*) echo "You are not root!" ;;
 esac
 ```
+
+```
+@dnat
+```
