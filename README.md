@@ -73,6 +73,13 @@ $ cat file_name | grep -Ev '[:blank]*#|^[:blank]*$'
 $ cat old_file.txt |grep -v host > ip.txt
 ```
 
+##### Permanently delete a file
+```
+$ shred -u file_name
+```
+
+
+
 ---
 
 ##### Create patch (diff)
