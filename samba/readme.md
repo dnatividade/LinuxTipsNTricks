@@ -21,3 +21,6 @@ smbpasswd -a user_name
 smbpasswd -x user_name
 ```
 
+```
+@dnat
+```
