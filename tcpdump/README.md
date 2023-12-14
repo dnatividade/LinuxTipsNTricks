@@ -39,3 +39,7 @@
 **SOURCE:** https://danielmiessler.com/study/tcpdump/
 
 **LICENCE:** CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/)
+
+```
+@dnat
+```
