@@ -8,3 +8,6 @@ VBoxManage clonehd win7-lazarus202-disk001.vmdk win7-lazarus202-disk001.vdi --fo
 VBoxManage modifyhd win7-lazarus202-disk001.vdi --compact
 ```
 
+```
+@dnat
+```
