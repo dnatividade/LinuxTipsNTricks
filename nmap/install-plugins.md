@@ -9,3 +9,8 @@ sudo ln -s `pwd`/scipag_vulscan /usr/share/nmap/scripts/vulscan
 nmap -sV --script=vulscan/vulscan.nse HOST_or_IP
 ```
 Source: https://linuxhint.com/nmap_vulscan/
+
+```
+@dnat
+```
+
