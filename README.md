@@ -166,7 +166,6 @@ ffmpeg -i input.mov -c copy -an output.mov
 ffmpeg -i input.mp4 -vcodec libx264 -crf 20 output.mp4
 ```
 
-
 ##### Convert PNG to ICO
 ```
 #apt install imagemagick
@@ -174,6 +173,7 @@ convert -resize x16 -gravity center -crop 16x16+0+0 input.png -flatten -colors 2
 ```
 (souce: https://askubuntu.com/questions/867567/convert-jpg-or-png-to-ico-using-terminal-and-back)
 
+---
 
 ##### Remove password from PDF file
 ```
@@ -183,12 +183,8 @@ qpdf --password=PASSWORD --decrypt File_with_pass.pdf File_without_pass.pdf
 
 ##### Separate PDF file pages
 ```
-
----
-
 #apt install pdftk
 pdftk File.pdf burst
-
 ```
 
 ##### Reduce PDF file quality (downsize)
@@ -197,6 +193,7 @@ pdftk File.pdf burst
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=Reduced_file.pdf Original_file.pdf
 ```
 
+---
 
 ```
 @dnat
