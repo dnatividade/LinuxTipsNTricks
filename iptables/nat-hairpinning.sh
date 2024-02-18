@@ -19,5 +19,5 @@ iptables -A FORWARD -i $IF_LAN -o $IF_LAN -j ACCEPT
 
 #Adapted from: https://unix.stackexchange.com/questions/282086/how-does-nat-reflection-nat-loopback-work
 
-#dn@t
 
+#dn@t
