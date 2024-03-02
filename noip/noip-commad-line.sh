@@ -40,3 +40,5 @@ chmod 755 /etc/init.d/noip.sh
 update-rc.d noip.sh defaults
 
 exit 0
+
+
