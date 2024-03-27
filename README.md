@@ -164,6 +164,9 @@ ffmpeg -i input.mov -c copy -an output.mov
 
 #Compress video
 ffmpeg -i input.mp4 -vcodec libx264 -crf 20 output.mp4
+
+#Convert dav to mp4 (SOURCE: https://stackoverflow.com/questions/32827539/ffmpeg-conversion-dav-to-any-video-files)
+ffmpeg -y -i input-file.dav -c:v libx264 -crf 24 output-file.mp4
 ```
 
 ##### Convert PNG to ICO
