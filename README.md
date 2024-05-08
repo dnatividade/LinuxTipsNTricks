@@ -143,6 +143,20 @@ $ ffmpeg -i video.mp4 -pix_fmt rgb24 video.gif
 
 ##### FFMPEG
 ```
+##CONVERT TO MP3
+#Convert wav to mp3
+ffmpeg -i audio.wav -acodec libmp3lame audio.mp3
+
+#Convert ogg to mp3
+ffmpeg -i audio.ogg -acodec libmp3lame audio.mp3
+
+#Convert ac3 to mp3
+ffmpeg -i audio.ac3 -acodec libmp3lame audio.mp3
+
+#Convert aac to mp3
+ffmpeg -i audio.aac -acodec libmp3lame audio.mp3
+#-----------------
+
 #Cut video (extracts video from 20 sec. to 27 sec.)
 ffmpeg -i input.mp4 -ss 00:00:20 -t 00:00:27 -c copy output.mp4
 
