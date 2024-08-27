@@ -130,7 +130,7 @@ $ lame -h music.wav music.mp3
 
 ##### Remove ALL image EXIF
 ```
-$ sudo apt install libimage-exiftool-perl
+$ sudo install exiftool
 $ exiftool -all= *.jpg
 ```
 (souce: https://www.shellhacks.com/remove-exif-data-images-photos-linux/)
