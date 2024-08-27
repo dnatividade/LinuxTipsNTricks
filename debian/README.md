@@ -1,3 +1,10 @@
+## apt error: GPG Error, Sign error or NO_PUBKEY
+```
+The repository 'XYZ' is not signed.
+# sudo apt update --allow-unauthenticated --allow-insecure-repositories
+# sudo apt upgrade --allow-unauthenticated
+```
+
 ## Debian 11 and 12 audio: "Saída fictícia"
 
 ```
