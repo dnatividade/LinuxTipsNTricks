@@ -3,6 +3,11 @@
 
 ---
 
+##### Uncompress zlib
+```
+zlib-flate -uncompress < input_fil.zlib > output_file
+```
+
 ##### Compress/Uncompress
 ```
  .tar.bz2
