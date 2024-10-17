@@ -217,7 +217,7 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -d
 
 ---
 
-##### Copy a whole disk ou partition with dd + progress
+##### Copy an entire disk or partition with dd + progress
 ```
 sudo dd if=/dev/sdXn of=/home/user/disk_img bs=4M status=progress
 ```
