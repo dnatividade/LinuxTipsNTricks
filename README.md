@@ -188,12 +188,19 @@ ffmpeg -i input.mp4 -vcodec libx264 -crf 20 output.mp4
 ffmpeg -y -i input-file.dav -c:v libx264 -crf 24 output-file.mp4
 ```
 
+##### Convert PNG to JPG
+```
+#apt install imagemagick
+convert input.png -quality 90 output.jpg
+```
+
 ##### Convert PNG to ICO
 ```
 #apt install imagemagick
 convert -resize x16 -gravity center -crop 16x16+0+0 input.png -flatten -colors 256 -background transparent output.ico
 ```
 (souce: https://askubuntu.com/questions/867567/convert-jpg-or-png-to-ico-using-terminal-and-back)
+
 
 ---
 
