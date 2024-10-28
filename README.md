@@ -63,6 +63,11 @@ $ grep --include=\*.{cc,h} -rnw './' -e "some words"
 $ find ./ -name file_name -exec rm {} \;
 ```
 
+##### Find and delete duplicated files
+```
+$ fdupes -rdN directory/
+```
+
 ##### Replace all line breaks with a blank space
 ```
 $ tr '\n' ' ' < old_file.txt > new_file.txt
