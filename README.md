@@ -88,6 +88,11 @@ $ cat old_file.txt |grep -v host > ip.txt
 $ shred -u file_name
 ```
 
+##### Split a file into several parts of fixed size
+```
+$ split -b 100k file part_
+```
+
 ---
 
 ##### Create patch (diff)
