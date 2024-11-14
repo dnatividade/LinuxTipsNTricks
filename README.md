@@ -90,7 +90,12 @@ $ shred -u file_name
 
 ##### Split a file into several parts of fixed size
 ```
-$ split -b 100k file part_
+$ split -b 100k file_name part_
+```
+
+##### Split a file into 2 equal parts
+```
+$ file=file_name; split -b $((`du $file -b |cut -f1` / 2)) $file part_
 ```
 
 ---
