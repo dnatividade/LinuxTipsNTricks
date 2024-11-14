@@ -246,6 +246,20 @@ sudo dd if=/dev/sdXn of=/home/user/disk_img bs=4M status=progress
 
 ---
 
+#### GIT
+
+**Git add, commit and push**
+```
+$  git add . && git commit -m "UP" && git push origin master
+```
+
+**Undo the last commit**
+```
+$ git reset HEAD~
+```
+
+---
+
 ```
 @dnat
 ```
