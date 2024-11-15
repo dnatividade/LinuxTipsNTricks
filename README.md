@@ -58,6 +58,11 @@ OR (into .cc and .h files)
 $ grep --include=\*.{cc,h} -rnw './' -e "some words"
 ```
 
+**Get list of all files, recursively, sorted by modification date**
+```
+$ find directory/ -type f -exec stat --format="%y %n" {} \; | sort -r
+```
+
 ##### Find and delete specific files
 ```
 $ find ./ -name file_name -exec rm {} \;
