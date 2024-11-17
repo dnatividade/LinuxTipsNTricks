@@ -3,12 +3,12 @@
 
 ---
 
-##### Uncompress zlib
+**Uncompress zlib**
 ```
 zlib-flate -uncompress < input_fil.zlib > output_file
 ```
 
-##### Compress/Uncompress
+**Compress/Uncompress**
 ```
  .tar.bz2
 $ tar -cvjf file_name.tar.bz2 directory
@@ -17,13 +17,13 @@ $ tar -cvjf file_name.tar.bz2 directory
 $ tar -Jcvf file_name.tar.xz directory/
 ```
 
-##### Compress ZIP with PASSWORD
+**Compress ZIP with PASSWORD**
 ```
 $ zip -e -r file_dst.zip file_or_directory_src
 <enter password>
 ```
 
-##### Unpack
+**Unpack**
 ```
  .tar.bz2
 $ tar -xvjf file_name.tar.bz2
@@ -50,7 +50,7 @@ $ bunzip file_name.bz2
 
 ---
 
-##### Find specific word into the files
+**Find specific word into the files**
 ```
 $ find ./* -type f -exec grep -l some_word {} \;
 
@@ -63,64 +63,64 @@ $ grep --include=\*.{cc,h} -rnw './' -e "some words"
 $ find directory/ -type f -exec stat --format="%y %n" {} \; | sort -r
 ```
 
-##### Find and delete specific files
+**Find and delete specific files**
 ```
 $ find ./ -name file_name -exec rm {} \;
 ```
 
-##### Find and delete duplicated files
+**Find and delete duplicated files**
 ```
 $ fdupes -rdN directory/
 ```
 
-##### Replace all line breaks with a blank space
+**Replace all line breaks with a blank space**
 ```
 $ tr '\n' ' ' < old_file.txt > new_file.txt
 ```
 
-##### Show only uncomment lines
+**Show only uncomment lines**
 ```
 $ cat file_name | grep -Ev '[:blank]*#|^[:blank]*$'
 ```
 
-##### Delete lines from a file containing a specific word
+**Delete lines from a file containing a specific word**
 ```
 $ cat old_file.txt |grep -v host > ip.txt
 ```
 
-##### Permanently delete a file
+**Permanently delete a file**
 ```
 $ shred -u file_name
 ```
 
-##### Split a file into several parts of fixed size
+**Split a file into several parts of fixed size**
 ```
 $ split -b 100k file_name part_
 ```
 
-##### Split a file into 2 equal parts
+**Split a file into 2 equal parts**
 ```
 $ file=file_name; split -b $((`du $file -b |cut -f1` / 2)) $file part_
 ```
 
 ---
 
-##### Create patch (diff)
+**Create patch (diff)**
 ```
 $ diff -u old_file updated_file > file.patch
 ```
 
-##### Apply patch
+**Apply patch**
 ```
 $ patch  old_fle -i file.patch -o new_file
 ```
 
-##### Apply patch Linux Kernel
+**Apply patch Linux Kernel**
 ```
 $ patch -p1 < file_name.patch
 ```
 
-##### Disable kernel modules from initialization
+**Disable kernel modules from initialization**
 ```
 - edit (create if not exist): /etc/modprobe.d/blacklist.conf
 - insert one module for a line to disable it:
@@ -129,12 +129,12 @@ $ patch -p1 < file_name.patch
 
 ---
 
-##### Remount partition read/write
+**Remount partition read/write**
 ```
 # mount / -o remount,rw
 ```
 
-##### Disable swap (Ubuntu 20.04)
+**Disable swap (Ubuntu 20.04)**
 ```
 # sed -i.bak '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab && sudo swapoff -a && sudo rm -f -r /swapfile
 ```
@@ -142,7 +142,7 @@ $ patch -p1 < file_name.patch
 
 ---
 
-##### Music conversions
+**Music conversions**
 ```
 #Rip music CD: Ripperx
 $ sudo apt-get install ripperx
@@ -153,7 +153,7 @@ $ sudo apt-get install lame
 $ lame -h music.wav music.mp3
 ```
 
-##### Remove ALL image EXIF
+**Remove ALL image EXIF**
 ```
 $ sudo install exiftool
 $ exiftool -all= *.jpg
@@ -161,12 +161,12 @@ $ exiftool -all= *.jpg
 (souce: https://www.shellhacks.com/remove-exif-data-images-photos-linux/)
 
 
-##### Create GIF from videos file
+**Create GIF from videos file**
 ```
 $ ffmpeg -i video.mp4 -pix_fmt rgb24 video.gif
 ```
 
-##### FFMPEG
+**FFMPEG**
 ```
 ##CONVERT TO MP3
 #Convert wav to mp3
@@ -208,13 +208,13 @@ ffmpeg -i input.mp4 -vcodec libx264 -crf 20 output.mp4
 ffmpeg -y -i input-file.dav -c:v libx264 -crf 24 output-file.mp4
 ```
 
-##### Convert PNG to JPG
+**Convert PNG to JPG**
 ```
 #apt install imagemagick
 convert input.png -quality 90 output.jpg
 ```
 
-##### Convert PNG to ICO
+**Convert PNG to ICO**
 ```
 #apt install imagemagick
 convert -resize x16 -gravity center -crop 16x16+0+0 input.png -flatten -colors 256 -background transparent output.ico
@@ -224,19 +224,19 @@ convert -resize x16 -gravity center -crop 16x16+0+0 input.png -flatten -colors 2
 
 ---
 
-##### Remove password from PDF file
+**Remove password from PDF file**
 ```
 #apt install qpdf
 qpdf --password=PASSWORD --decrypt File_with_pass.pdf File_without_pass.pdf
 ```
 
-##### Separate PDF file pages
+**Separate PDF file pages**
 ```
 #apt install pdftk
 pdftk File.pdf burst
 ```
 
-##### Reduce PDF file quality (downsize)
+**Reduce PDF file quality (downsize)**
 ```
 #apt install ghostscript
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=Reduced_file.pdf Original_file.pdf
@@ -244,14 +244,14 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -d
 
 ---
 
-##### Copy an entire disk or partition with dd + progress
+**Copy an entire disk or partition with dd + progress**
 ```
 sudo dd if=/dev/sdXn of=/home/user/disk_img bs=4M status=progress
 ```
 
 ---
 
-#### GIT
+**GIT**
 
 **Git add, commit and push**
 ```
