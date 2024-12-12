@@ -8,7 +8,7 @@
 zlib-flate -uncompress < input_fil.zlib > output_file
 ```
 
-**Compress/Uncompress**
+**Compress**
 ```
  .tar.bz2
 $ tar -cvjf file_name.tar.bz2 directory
@@ -23,7 +23,7 @@ $ zip -e -r file_dst.zip file_or_directory_src
 <enter password>
 ```
 
-**Unpack**
+**Uncompress**
 ```
  .tar.bz2
 $ tar -xvjf file_name.tar.bz2
