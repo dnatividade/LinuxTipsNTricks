@@ -1,6 +1,8 @@
 # LinuxTipsNTricks! ![docs-tipsNtrics](https://img.shields.io/badge/docs-tipsNtricks-green)
 ### Linux tips and tricks for command line and tasks automatization. Basic and advanced Linux commands
 
+![linux-tips-n-tricks.jpg](linux-tips-n-tricks.jpg)
+
 ---
 
 **Uncompress zlib**
