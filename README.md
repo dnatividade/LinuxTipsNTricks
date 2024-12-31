@@ -136,6 +136,15 @@ $ patch -p1 < file_name.patch
 # mount / -o remount,rw
 ```
 
+**Mount a specific partition from a disk image (read only)**
+```
+# mount -ro,loop,offset=<offset_in_bytes> /media/image.bin /mnt/
+
+Ex.: Partition 3: 4.656 GiB (4999610368 bytes, 9764864 sectors from 99610624)
+Find the starting sector of the partition and multiply it by the size of each sector in bytes (usually 512).
+# mount -ro,loop,offset=$((99610624*512)) /media/image.bin /mnt/
+```
+
 **Disable swap (Ubuntu 20.04)**
 ```
 # sed -i.bak '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab && sudo swapoff -a && sudo rm -f -r /swapfile
