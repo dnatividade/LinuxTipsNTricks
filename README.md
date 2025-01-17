@@ -5,10 +5,7 @@
 
 ---
 
-**Uncompress zlib**
-```
-zlib-flate -uncompress < input_fil.zlib > output_file
-```
+### [UN]COMPRESS
 
 **Compress**
 ```
@@ -23,6 +20,11 @@ $ tar -Jcvf file_name.tar.xz directory/
 ```
 $ zip -e -r file_dst.zip file_or_directory_src
 <enter password>
+```
+
+**Uncompress zlib**
+```
+zlib-flate -uncompress < input_fil.zlib > output_file
 ```
 
 **Uncompress**
@@ -131,6 +133,8 @@ $ patch -p1 < file_name.patch
 
 ---
 
+### PARTITIONING
+
 **Remount partition read/write**
 ```
 # mount / -o remount,rw
@@ -152,6 +156,8 @@ Find the starting sector of the partition and multiply it by the size of each se
 (source: https://www.vivaolinux.com.br/dica/Desativar-SWAP-em-Ubuntu-2004-e-derivados-com-unico-comando)
 
 ---
+
+### MULTIMEDIA
 
 **Music conversions**
 ```
@@ -275,6 +281,54 @@ $ git reset HEAD~
 ```
 
 ---
+
+### DNS TOOLS
+
+**Search A register**
+
+```
+$ dig +short mail.domain.com A
+1.2.3.4
+```
+
+**Search MX register**
+```
+$ dig +short domain.com MX
+10 mail.domain.com.
+```
+
+**Search PTR register**
+```
+$ dig -x 1.2.3.4
+
+; <<>> DiG 9.18.28-1~deb12u2-Debian <<>> -x 1.2.3.4
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62971
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; QUESTION SECTION:
+;4.3.2.1.in-addr.arpa.	IN	PTR
+
+;; ANSWER SECTION:
+4.3.2.1.in-addr.arpa. 86400 IN	PTR	mail.domain.com.br.
+
+;; ADDITIONAL SECTION:
+mail.domain.com. 86400 IN	A	1.2.3.4
+
+;; Query time: 3 msec
+;; SERVER: 192.168.0.1#53(192.168.0.1) (UDP)
+;; WHEN: Fri Jan 17 14:00:18 -03 2025
+;; MSG SIZE  rcvd: 102
+```
+
+**Search TXT register**
+```
+$ dig +short TXT domain.com
+"v=spf1 mx ~all"
+"google-site-verification=Sl2ABCDxY15QiI_1RgK9Ud8m3fz4ck7UTju_o8b5abC"
+```
+
 
 ```
 @dnat
