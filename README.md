@@ -284,20 +284,20 @@ $ git reset HEAD~
 
 ### DNS TOOLS
 
-**Search A register**
+**Search A record**
 
 ```
 $ dig +short mail.domain.com A
 1.2.3.4
 ```
 
-**Search MX register**
+**Search MX record**
 ```
 $ dig +short domain.com MX
 10 mail.domain.com.
 ```
 
-**Search PTR register**
+**Search PTR record**
 ```
 $ dig -x 1.2.3.4
 
@@ -322,7 +322,7 @@ mail.domain.com. 86400 IN	A	1.2.3.4
 ;; MSG SIZE  rcvd: 102
 ```
 
-**Search TXT register**
+**Search TXT record**
 ```
 $ dig +short TXT domain.com
 "v=spf1 mx ~all"
