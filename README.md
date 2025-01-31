@@ -133,7 +133,7 @@ $ patch -p1 < file_name.patch
 
 ---
 
-### PARTITIONING
+### FILE SYSTEM AND PARTITIONING
 
 **Remount partition read/write**
 ```
@@ -148,6 +148,12 @@ Ex.: Partition 3: 4.656 GiB (4999610368 bytes, 9764864 sectors from 99610624)
 Find the starting sector of the partition and multiply it by the size of each sector in bytes (usually 512).
 # mount -ro,loop,offset=$((99610624*512)) /media/image.bin /mnt/
 ```
+
+**Check block size**
+```
+# dumpe2fs /dev/sdXn | grep -i "block size"
+```
+
 
 **Disable swap (Ubuntu 20.04)**
 ```
