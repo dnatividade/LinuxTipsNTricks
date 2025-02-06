@@ -54,6 +54,8 @@ $ bunzip file_name.bz2
 
 ---
 
+### FILE MANIPULATION AND SEARCHING
+
 **Find specific word into the files**
 ```
 $ find ./* -type f -exec grep -l some_word {} \;
