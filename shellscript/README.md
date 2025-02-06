@@ -15,7 +15,9 @@ else
     echo "Is not a number"
 fi
 ````
+
 *SOURCE: http://blog.evaldojunior.com.br/aulas/blog/shell%20script/2011/05/08/shell-script-parte-2-controle-de-fluxo.html*
+
 ----
 
 ### FOR
@@ -45,6 +47,7 @@ done
 ```
 
 *SOURCE: https://cleitonbueno.com/shell-script-estrutura-de-repeticao-e-arrays/*
+
 ----
 
 
