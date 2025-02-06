@@ -1,4 +1,4 @@
-## IF / ELIF / ELSE
+### IF / ELIF / ELSE
 ````
 #Read a number from keybord
 read numero
@@ -15,10 +15,10 @@ else
     echo "Is not a number"
 fi
 ````
-##### SOURCE: http://blog.evaldojunior.com.br/aulas/blog/shell%20script/2011/05/08/shell-script-parte-2-controle-de-fluxo.html
+*SOURCE: http://blog.evaldojunior.com.br/aulas/blog/shell%20script/2011/05/08/shell-script-parte-2-controle-de-fluxo.html*
 ----
 
-## FOR
+### FOR
 
 ```
 #01
@@ -44,11 +44,11 @@ do
 done
 ```
 
-##### SOURCE: https://cleitonbueno.com/shell-script-estrutura-de-repeticao-e-arrays/
+*SOURCE: https://cleitonbueno.com/shell-script-estrutura-de-repeticao-e-arrays/*
 ----
 
 
-## CASE
+### CASE
 
 ```
 MYUSER=`whoami`
@@ -57,6 +57,16 @@ case $MYUSER in
 	root) echo "You are root!" ;;
 	*) echo "You are not root!" ;;
 esac
+```
+
+### RECEIVE PARAMETERS
+
+```
+if [ -z "$1" ]; then
+    echo "Parameter not found"
+else
+    echo "Parameter found: $1"
+fi
 ```
 
 ```
