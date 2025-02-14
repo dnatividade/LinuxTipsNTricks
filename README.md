@@ -337,6 +337,16 @@ $ dig +short TXT domain.com
 "google-site-verification=Sl2ABCDxY15QiI_1RgK9Ud8m3fz4ck7UTju_o8b5abC"
 ```
 
+---
+
+### HACKING AND FORENSICS
+
+**Password cracking**
+```
+##John The Ripper (using rockyou wordlist)
+# unshadow /etc/passwd /etc/shadow > hash.txt
+# john --format=crypt --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+```
 
 ```
 @dnat
