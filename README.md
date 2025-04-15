@@ -278,6 +278,12 @@ sudo dd if=/dev/sdXn of=/home/user/disk_img bs=4M status=progress
 
 **GIT**
 
+**Initialize and add remote repository**
+```
+$ git init
+$ git remote add origin https://github.com/account/repository
+```
+
 **Git add, commit and push**
 ```
 $  git add . && git commit -m "UP" && git push origin master
