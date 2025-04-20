@@ -10,3 +10,13 @@ $ pip3 install module1 module2 ... moduleN
 $ pip install pyinstaller
 $ pyinstaller --onefile --windowed --icon=meu_icone.ico my_script.py
 ```
+
+**Install requirements (requirements.txt)**
+```
+$ pip install -r requirements.txt
+```
+
+
+```
+@dnat
+```
