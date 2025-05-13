@@ -9,7 +9,9 @@ $ pip3 install module1 module2 ... moduleN
 
 **Create a exec/binary from a python script**
 ```
+$ source my_environment/bin/activate
 $ pip install pyinstaller
+$ rm -rf build dist __pycache__ my_script.spec
 $ pyinstaller --onefile --windowed --icon=meu_icone.ico my_script.py
 ```
 
