@@ -74,6 +74,11 @@ $ find directory/ -type f -exec stat --format="%y %n" {} \; | sort -r
 $ find ./ -name file_name -exec rm {} \;
 ```
 
+**Find a module path**
+```
+# ldconfig -p | grep part_of_module_name
+```
+
 **Find and delete duplicated files**
 ```
 $ fdupes -rdN directory/
