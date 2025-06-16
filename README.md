@@ -299,6 +299,22 @@ $  git add . && git commit -m "UP" && git push origin master
 $ git reset HEAD~
 ```
 
+**fatal: Not possible to fast-forward**
+```
+$ git pull origin master
+fatal: Not possible to fast-forward, aborting.
+
+$ git fetch origin
+$ git merge master
+Already up to date.
+
+$ git commit -m "UP"
+$ git pull origin master --rebase
+Successfully rebased and updated refs/heads/master.
+
+$ git push origin master
+```
+
 ---
 
 ### DNS TOOLS
