@@ -7,6 +7,11 @@ $ source my_environment/bin/activate
 $ pip3 install module1 module2 ... moduleN
 ```
 
+**Update pip**
+```
+$ pip install --upgrade pip
+```
+
 **Create a exec/binary from a python script**
 ```
 $ source my_environment/bin/activate
