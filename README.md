@@ -315,6 +315,14 @@ Successfully rebased and updated refs/heads/master.
 $ git push origin master
 ```
 
+**fatal: refusing to merge unrelated histories**
+```
+$ git pull origin master 
+fatal: refusing to merge unrelated histories
+
+$ git pull origin master --allow-unrelated-histories
+```
+
 ---
 
 ### DNS TOOLS
