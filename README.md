@@ -225,6 +225,10 @@ file 'input2.mp4'
 file 'inputN.mp4'
 #----------------
 
+##Extract I-frames (the better frames)
+ffmpeg -i input.mp4 -vf "select=eq(pict_type\,I)" -vsync vfr frames/frame_%04d.png
+
+
 ##Concat files
 ffmpeg -f concat -i list.txt -c copy output.mp4
 
