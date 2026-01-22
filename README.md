@@ -225,7 +225,7 @@ file 'input2.mp4'
 file 'inputN.mp4'
 #----------------
 
-##Extract I-frames (the better frames)
+##Extract I-frames (the best frames)
 ffmpeg -i input.mp4 -vf "select=eq(pict_type\,I)" -vsync vfr frames/frame_%04d.png
 
 
